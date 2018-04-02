@@ -9,6 +9,7 @@ class GrammarQuestionAdmin(admin.ModelAdmin):
     fieldsets = [
         ('Question text:',{'fields':['text']}),
     ]
+    list_display = ('text',)
     inlines = [ChoiceInline]
 
 admin.site.register(GrammarQuestions, GrammarQuestionAdmin)

@@ -8,3 +8,4 @@ class Choice(models.Model):
     text = models.CharField(max_length=255)
     is_correct_answer = models.BooleanField()
     question = models.ForeignKey(GrammarQuestions, related_name='questions', on_delete=models.CASCADE)
+
